@@ -1,0 +1,14 @@
+my_points={'a':(12,25),'b':(351,52),'c':(3584,521)}
+highest=[0,0]
+init=0
+
+for a in range(2):
+    init=0
+    for b in my_points.keys():
+        val=my_points[b][a]
+        if init==0:
+            highest[a]=val
+        init+=1
+        if val>highest[a]:
+            highest[a]=val
+    print("Maximum value at index (my_points,",a,')=',highest[a])
