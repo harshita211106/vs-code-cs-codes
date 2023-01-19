@@ -1,0 +1,13 @@
+##wap to that takes a value and checks whether the given value is a part of a given dictionary or not.if it 
+#is, it should print the corrospondin key otherwise print an error message
+
+dict={'a':125,'b':684,'c':524,'d':3415,'e':25745,'f':357125,'g':524,'h':8524}
+e_value=int(input("Enter value : "))
+dict_value=0
+
+for a in dict.keys():
+    dict_value=dict.get(a)
+    if e_value==dict_value:
+        print("Value found at index",a)
+    else:
+        print("Value not found!")
